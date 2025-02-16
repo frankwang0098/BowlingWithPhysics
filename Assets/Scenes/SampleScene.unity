@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 480863745}
   m_Layer: 7
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -845,7 +845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbe4d8ab7fb497347b25ab299862794f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 10
+  force: 15
   inputManager: {fileID: 2088459308}
   ballAnchor: {fileID: 1288874325}
   launchIndicator: {fileID: 1236028874}
@@ -1517,8 +1517,8 @@ GameObject:
   - component: {fileID: 1740463029}
   - component: {fileID: 1740463028}
   m_Layer: 0
-  m_Name: Base
-  m_TagString: Untagged
+  m_Name: Ground
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1622,6 +1622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2088459309}
   - component: {fileID: 2088459308}
+  - component: {fileID: 2088459310}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1662,6 +1663,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2088459310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088459307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649c123f24f1def438c86fd28a63d9e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
 --- !u!1001 &1506378971330453494
 PrefabInstance:
   m_ObjectHideFlags: 0
