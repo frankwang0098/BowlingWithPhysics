@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6515715757719903475}
   - component: {fileID: 2063661217729348736}
   - component: {fileID: 2454581460686738592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,6 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7684770697169695131}
+  - {fileID: 3782130910120467050}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2679852422296029516
@@ -51,7 +52,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4111686930940091012}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -108,10 +109,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
+  m_Radius: 0.45786515
+  m_Height: 2.084819
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.006586898, y: 0.20932612, z: -0.00000010782725}
 --- !u!54 &2454581460686738592
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -150,7 +151,7 @@ GameObject:
   - component: {fileID: 7684770697169695131}
   - component: {fileID: 5216278787075276389}
   - component: {fileID: 7481115717392571268}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FallTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,8 +167,8 @@ Transform:
   m_GameObject: {fileID: 4685590377862847583}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.997, z: 0}
-  m_LocalScale: {x: 1.1821876, y: 0.1, z: 1}
+  m_LocalPosition: {x: 0.019, y: 1.405, z: 0}
+  m_LocalScale: {x: 4.039757, y: 0.09875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7172851099723948705}
@@ -191,8 +192,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.5138727, y: 2.5190215, z: 1}
+  m_Center: {x: -0.010948847, y: -0.7595109, z: 0}
 --- !u!114 &7481115717392571268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,3 +210,89 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isPinFallen: 0
+--- !u!1001 &3744300516620647809
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7172851099723948705}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.9480628
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2988827
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.194375
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_Name
+      value: CHAHIN_BOWLING_PIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+--- !u!4 &3782130910120467050 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bbb010e0f10e3b4ea8b99f0c81d88c4, type: 3}
+  m_PrefabInstance: {fileID: 3744300516620647809}
+  m_PrefabAsset: {fileID: 0}
